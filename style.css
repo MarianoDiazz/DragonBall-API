@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1b1b1b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Card Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card Individual */
+.card {
+    background: linear-gradient(145deg, #ff8008, #e52d27);
+    border-radius: 15px;
+    width: 300px;
+    height: 500px;
+    /* Definir una altura fija para que las tarjetas tengan un tamaño consistente */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    overflow: visible;
+    /* Asegura que nada sobresalga fuera de la tarjeta */
+}
+
+/* Imagen centrada */
+.containerImg {
+    width: 100%;
+    height: 250px;
+    /* Aseguramos que la imagen tenga un tamaño fijo */
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+    background-image: url('https://img.freepik.com/vector-gratis/papel-tapiz-plano-estilo-comic_23-2148818640.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 0;
+}
+
+/* .card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+} */
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.name {
+    font-size: 1.6em;
+    color: #fff;
+    margin: 10px;
+    font-family: "Bangers", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dragon-ball {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    transform: rotate(15deg);
+}
+
+
+.character-img {
+    width: 100%;
+    height: 100%;
+    max-height: 150%;
+    object-fit: contain;
+    /* Esto asegura que la imagen se adapte sin deformarse */
+    transition: transform 0.3s ease;
+}
+
+.containerImg:hover .character-img {
+    transform: scale(1.2);
+}
+
+/* Race and Description */
+.race {
+    font-size: 1.2em;
+    color: #fdfff7;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.description {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    color: #fff;
+    text-align: left;
+    max-height: 100px;
+    /* Max height para la descripción */
+    overflow: hidden;
+    /* Si hay más texto, se oculta */
+    position: relative;
+}
+
+
+/* Importar la fuente de Dragon Ball (o similar) */
